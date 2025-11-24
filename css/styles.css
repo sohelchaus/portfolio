@@ -518,20 +518,10 @@ body {
     margin-left: 0.625rem;
 }
 
-@keyframes scrollReset {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
-
 
 
 /* --------------- */
