@@ -63,7 +63,7 @@
     /* ------------- */
     /* INTRO SECTION */
     /* ------------- */
-    #intro {
+    .intro {
         display: flex;
         flex-direction: column;
         width: 100vw;
@@ -119,7 +119,7 @@
         margin-left: 2rem;
     }
 
-    #about {
+    .about {
         width: calc(100% - 2rem);
         margin: 0 1rem;
     }
