@@ -7,6 +7,7 @@
     <link rel="icon" href="images/logo.png" type="webp">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/query.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&display=swap">
     <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
     <title>Sohel Chaus | Portfolio</title>
@@ -43,7 +44,7 @@
     <!-- ========== MAIN SECTION ========= -->
     <!-- --------------------------------- -->
     <main class="main-container">
-        <section id="intro">
+        <section class="intro">
             <!-- left side -->
             <div class="social-container">
                 <div class="social-links">
@@ -77,7 +78,7 @@
         <!-------------------->
         <!-- RATING SECTION -->
         <!-------------------->
-        <section id="rating">
+        <section class="rating">
             <div class="rating-container">
 
                 <div class="stat-box">
@@ -103,11 +104,11 @@
         <!--------------------->
         <!-- SERVICE SECTION -->
         <!--------------------->
-        <div class="services-title">
+        <div class="section-title">
             <h2>Services</h2>
-            <P>HOW CAN <span id="services-paragraph">I HELP YOU</span></P>
+            <P>HOW CAN <span id="section-paragraph">I HELP YOU</span></P>
         </div>
-        <section id="services">
+        <section class="services">
             <div class="services-container">
                 <div class="service-box">
                     <i class="fas fa-code"></i>
@@ -136,195 +137,68 @@
         </section>
 
         <!------------------->
-        <!-- ABOUT SECTION -->
+        <!-- CERTIFICATION -->
         <!------------------->
-        <div class="about-title">
-            <h2>About</h2>
-            <P>WHAT MY <span id="about-paragraph">ABOUT</span> SAY’S</P>
-        </div>
-        <section id="about">
-            <div class="about-container">
-                <!-- LEFT - ABOUT CONTAINER -->
-                <div class="about-left">
-                    <img src="images/profile-01.webp" alt="Sohel Chaus">
-                </div>
+        <section class="certification-section">
+            <div class="section-title">
+                <h2>Certification</h2>
+                <P>MY CERTIFIED <span id="section-paragraph">EXPERTISE</span></P>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <!-- RIGHT - ABOUT CONTAINER -->
-                <div class="about-right">
-                    <!------------->
-                    <!-- TAB BAR -->
-                    <!------------->
-                    <div class="tabs">
-                        <button class="tab-link active" onclick="openTab(event, 'skills')">Skills</button>
-                        <button class="tab-link" onclick="openTab(event, 'certification')">Certification</button>
-                        <button class="tab-link" onclick="openTab(event, 'education')">Education</button>
-                    </div>
-                    <!-- ----------------------->
-                    <!-- SKILLS / TAB CONTENT -->
-                    <!-- ----------------------->
-                    <div class="tab-content active" id="skills">
-                        <div class="progress-bar-container">
-                            <!-- SKILL ONE -->
-                            <div class="progress-bar">
-                                <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
-                                <div class="progress-detail">
-                                    <p class="progress-title">HTML</p>
-                                    <div class="bar">
-                                        <div class="fill" style="--progress: 70%">70%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SKILL TWO -->
-                            <div class="progress-bar">
-                                <i class="fa-brands fa-css" style="color: #ffffff;"></i>
-                                <div class="progress-detail">
-                                    <p class="progress-title">CSS</p>
-                                    <div class="bar">
-                                        <div class="fill" style="--progress: 60%">60%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SKILL THREE -->
-                            <div class="progress-bar">
-                                <i class="fa-brands fa-square-js" style="color: #ffffff;"></i>
-                                <div class="progress-detail">
-                                    <p class="progress-title">JS</p>
-                                    <div class="bar">
-                                        <div class="fill" style="--progress: 40%">40%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SKILL FOUR -->
-                            <div class="progress-bar">
-                                <i class="fa-solid fa-database" style="color: #ffffff;"></i>
-                                <div class="progress-detail">
-                                    <p class="progress-title">Database</p>
-                                    <div class="bar">
-                                        <div class="fill" style="--progress: 50%">50%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SKILL FIVE -->
-                            <div class="progress-bar">
-                                <i class="fa-brands fa-windows" style="color: #ffffff;"></i>
-                                <div class="progress-detail">
-                                    <p class="progress-title">Office</p>
-                                    <div class="bar">
-                                        <div class="fill" style="--progress: 80%">80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Certificate 1 -->
+                    <div class="swiper-slide">
+                        <a href="https://example.com/cert1" target="_blank" rel="noopener noreferrer">
+                            <img src="images/CFT-English.webp" alt="Certificate 1" />
+                        </a>
                     </div>
 
-                    <!--------------------------------->
-                    <!-- CERTIFICATION / TAB CONTENT -->
-                    <!--------------------------------->
-                    <div class="tab-content" id="certification">
-                        <div class="certification-container">
-
-                            <div class="certification active">
-                                <div class="cert-slider">
-                                    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-                                    <img src="images/cft-01.webp" class="cert-image" id="slide" alt="Project Management">
-                                    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-                                </div>
-
-                                <div class="cert-detail">
-                                    <h2>Project Management</h2>
-                                    <p>&emsp;&emsp;&emsp;Successfully completed LinkedIn Learning’s Project Management
-                                        course—gaining practical strategies to lead, plan, and deliver projects.</p>
-                                </div>
-                            </div>
-
-                            <div class="certification">
-                                <div class="cert-slider">
-                                    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-                                    <img src="images/cft-02.webp" class="cert-image" id="slide" alt="Css Basics">
-                                    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-                                </div>
-
-                                <div class="cert-detail">
-                                    <h2>CSS Basics</h2>
-                                    <p>&emsp;&emsp;&emsp;I am certified in the fundamentals of CSS, including styling
-                                        web pages, creating clean layouts, and improving user experience.</p>
-                                </div>
-                            </div>
-
-                            <div class="certification">
-                                <div class="cert-slider">
-                                    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-                                    <img src="images/cft-03.webp" class="cert-image" id="slide" alt="Web Design">
-                                    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-                                </div>
-
-                                <div class="cert-detail">
-                                    <h2>Web Design</h2>
-                                    <p>&emsp;&emsp;&emsp;I'm certified in basic web design. This includes understanding
-                                        layout principles, using HTML & CSS effectively and design user-friendly
-                                        webpages.</p>
-                                </div>
-                            </div>
-
-                            <div class="certification">
-                                <div class="cert-slider">
-                                    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-                                    <img src="images/cft-04.webp" class="cert-image" id="slide" alt="Eng">
-                                    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-                                </div>
-
-                                <div class="cert-detail">
-                                    <h2>English Basics</h2>
-                                    <p>&emsp;&emsp;&emsp;I am certified in foundational English skills through Skill
-                                        India Digital Hub. This includes basic grammar, vocabulary, sentence formation.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="certification">
-                                <div class="cert-slider">
-                                    <button class="slider-btn prev-btn" onclick="prevSlide()">❮</button>
-                                    <img src="images/cft-05.webp" class="cert-image" id="slide" alt="Typing">
-                                    <button class="slider-btn next-btn" onclick="nextSlide()">❯</button>
-                                </div>
-
-                                <div class="cert-detail">
-                                    <h2>Typing</h2>
-                                    <p>&emsp;&emsp;&emsp;I am certified in English typing fundamentals. I can type
-                                        accurately and apply basic formatting to documents.</p>
-                                </div>
-                            </div>
-
-                        </div>
+                    <!-- Certificate 2 -->
+                    <div class="swiper-slide">
+                        <a href="https://example.com/cert2" target="_blank" rel="noopener noreferrer">
+                            <img src="images/CFT-PM Foundation.webp" alt="Certificate 2" />
+                        </a>
                     </div>
 
-                    <!----------------------------->
-                    <!-- EDUCATION / TAB CONTENT -->
-                    <!----------------------------->
-                    <div class="tab-content" id="education">
-                        <div class="ed-container">
-                            <img src="images/college.webp" alt="Thumbnail">
-                            <div class="ed-content">
-                                <p><span>Degree:</span> Bachelor’s In Computer Applications</p>
-                                <p><span>Field:</span> Computer Science</p>
-                                <p><span>College:</span> Yeshwant College of Information Technology</p>
-                                <p><span>Duration:</span> 2023-2025</p>
-                            </div>
-                        </div>
+                    <!-- Certificate 3 -->
+                    <div class="swiper-slide">
+                        <a href="https://example.com/cert3" target="_blank" rel="noopener noreferrer">
+                            <img src="images/CFT-Web Design.webp" alt="Certificate 3" />
+                        </a>
+                    </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="swiper-slide">
+                        <a href="https://example.com/cert4" target="_blank" rel="noopener noreferrer">
+                            <img src="images/CFT-CSS Basic.webp" alt="Certificate 4" />
+                        </a>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="swiper-slide">
+                        <a href="https://example.com/cert5" target="_blank" rel="noopener noreferrer">
+                            <img src="images/CFT-Typing.webp" alt="Certificate 5" />
+                        </a>
                     </div>
 
                 </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
+
 
         <!--------------------->
         <!-- PROJECT SECTION -->
         <!--------------------->
-        <div class="project-section-title">
-            <h2>Project</h2>
-            <P>LOOK AT MY <span id="project-section-paragraph">PROJECT</span></P>
-        </div>
         <section id="project">
+            <div class="section-title">
+                <h2>Project</h2>
+                <P>LOOK AT MY <span id="section-paragraph">PROJECT</span></P>
+            </div>
             <div class="project-container" id="project-side">
                 <!-------------------->
                 <!-- PROJECT BOX 01 -->
@@ -335,7 +209,8 @@
                         <h2>Calculator</h2>
                     </div>
                     <div class="project-image">
-                        <a href="project-calculator.html"><img src="images/thumbnail-calculator.webp" alt="thumbnail"></a>
+                        <a href="project-calculator.html"><img src="images/thumbnail-calculator.webp"
+                                alt="thumbnail"></a>
                     </div>
                     <div class="project-caption">
                         <p>Mini Calculator Project A sleek and responsive calculator built with HTML, CSS, and
@@ -398,14 +273,18 @@
     <footer>
         <div class="footer-container">
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/sohel.alkathiri"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-                <a href="https://www.instagram.com/sohel.alkathiri"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
-                <a href="https://www.youtube.com/@sohel.alkathiri"><i class="fa-brands fa-square-youtube" style="color: #ffffff;"></i></a>
+                <a href="https://www.linkedin.com/in/sohel.alkathiri"><i class="fa-brands fa-linkedin"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://www.instagram.com/sohel.alkathiri"><i class="fa-brands fa-square-instagram"
+                        style="color: #ffffff;"></i></a>
+                <a href="https://www.youtube.com/@sohel.alkathiri"><i class="fa-brands fa-square-youtube"
+                        style="color: #ffffff;"></i></a>
             </div>
             <span id="divider"></span>
             <div class="footer-section">
                 <ul>
-                    <li><i class="fa-regular fa-address-card" style="color: #ffcc29;"></i><a href="contact.html">Contact</a></li>
+                    <li><i class="fa-regular fa-address-card" style="color: #ffcc29;"></i><a
+                            href="contact.html">Contact</a></li>
                     <li><i class="fa-solid fa-shield-halved" style="color: #ffcc29;"></i><a href="#">Privacy</a></li>
                     <li><i class="fa-solid fa-gears" style="color: #ffcc29;"></i><a href="#">Resources</a></li>
                 </ul>
@@ -421,6 +300,8 @@
         </div>
     </footer>
     <script src="js/script.js" defer></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+</body>
+</html>
 `

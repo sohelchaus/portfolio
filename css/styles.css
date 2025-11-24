@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -158,8 +159,39 @@ body {
     margin: 0 2rem;
 }
 
+/* ------------- */
+/* SECTION TITLE */
+/* ------------- */
+.section-title {
+    width: calc(100vw - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    font-family: monospace;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+    margin-left: 4rem;
+    color: white;
+}
+
+.section-title p {
+    position: relative;
+    font-size: clamp(1.5rem, 2vw + 0.6rem, 2.5rem);
+    margin-top: -10px;
+    word-spacing: 5px;
+}
+
+#section-paragraph {
+    color: #ffcc29;
+    font-family: "Bungee", sans-serif;
+}
+
+
+/* ------------- */
 /* INTRO SECTION */
-#intro {
+/* ------------- */
+.intro {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -170,7 +202,7 @@ body {
     width: 100%;
 }
 
-/* Left Side - INTRO CONTAINER */
+/* LEFT SIDE */
 
 .social-container {
     color: white;
@@ -230,7 +262,8 @@ body {
     font-size: clamp(0.8rem, 1vw + 0.3rem, 1.5rem);
 }
 
-/* Right Side - INTRO CONTAINER */
+/* RIGHT SIDE */
+
 .profile-container {
     flex: 1;
     display: flex;
@@ -268,7 +301,9 @@ body {
     z-index: 2;
 }
 
-/* RATING - INTRO CONTAINER */
+/* -------------- */
+/* RATING SECTION */
+/* -------------- */
 .rating-container {
     color: white;
     display: flex;
@@ -295,33 +330,10 @@ body {
     color: #858585;
 }
 
-/* SERVICES CONTAINER */
-.services-title {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    font-family: monospace;
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
-    width: calc(100vw - 4rem);
-    margin-left: 4rem;
-    color: white;
-}
-
-.services-title p {
-    position: relative;
-    font-size: clamp(1.2rem, 1.8vw + 0.6rem, 2.5rem);
-    margin-top: -10px;
-    word-spacing: 5px;
-}
-
-#services-paragraph {
-    color: #ffcc29;
-    font-family: "Bungee", sans-serif;
-}
-
-#services {
+/* ---------------- */
+/* SERVICES SECTION */
+/* ---------------- */
+.services {
     background-color: #1C1C1C;
     display: flex;
     flex-direction: column;
@@ -389,370 +401,71 @@ body {
     color: #673AB7;
 }
 
-/* --------------- */
-/* ABOUT CONTAINER */
-/* --------------- */
-.about-title {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    font-family: monospace;
-    font-size: clamp(0.8rem, 1vw + 0.5rem, 1rem);
-    width: calc(100vw - 4rem);
-    margin-left: 4rem;
-    margin-top: 4rem;
-    color: white;
+/* --------------------- */
+/* Certification Section */
+/* --------------------- */
+.certification-section {
+  width: 100vw;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.about-title p {
-    position: relative;
-    font-size: clamp(1.2rem, 1.8vw + 0.6rem, 2.5rem);
-    margin-top: -10px;
-    word-spacing: 5px;
+/* Swiper Container */
+.swiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-#about-paragraph {
-    color: #ffcc29;
-    font-family: "Bungee", sans-serif;
+.swiper-wrapper {
+  display: flex; 
 }
 
-#about {
-    background: #939393;
-    outline: 5px solid #939393;
-    width: calc(100% - 4rem);
-    height: 30rem;
-    display: flex;
-    border-radius: 0.5rem;
-    margin: 0 2rem;
+.swiper-slide {
+  flex-shrink: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.swiper-slide a {
+  display: block;
+  transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
-/* Left Side - ABOUT CONTAINER */
-.about-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: auto;
+.swiper-slide a:hover {
+  transform: scale(1.05);
 }
 
-.about-left img {
-    position: relative;
-    width: calc(100% - 4rem);
-    height: 100%;
-    object-fit: contain;
-    border-radius: 0.5rem;
-    border: 5px solid rgba(0, 0, 0, 0.4);
-    margin: 2rem;
+/* CERTIFICATION IMAGE */
+.swiper-slide img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* right side - ABOUT CONTAINER */
-
-.about-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    width: 70%;
+/* CERTIFICATION NAVIGATION */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffcc29;
+  transition: color 0.3s ease;
 }
 
-.tabs {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1rem;
-    box-sizing: border-box;
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #005fa3;
 }
 
-.tab-link {
-    background: #1C1C1C;
-    color: white;
-    flex: 1;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 100;
-    box-sizing: border-box;
-    text-align: center;
-}
 
-.tab-link.active {
-    background: #ffcc29;
-    color: #1b1d1a;
-    font-weight: bold;
-}
-
-/* Tab interface */
-.tab-content {
-    color: white;
-    height: 26rem;
-    width: 100%;
-    font-size: clamp(0.6rem, 0.8vw + 0.5rem, 1rem);
-    display: none;
-    position: relative;
-    margin-top: 1rem;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.tab-content.active {
-    display: block;
-    justify-content: center;
-}
-
-/* --------- */
-/* SKILLS TAB*/
-/* --------- */
-#skills {
-    background: #1b1d1a;
-    border-radius: 0.5rem;
-    padding: 1.2rem 2rem;
-}
-
-/* -------------- */
-/* SKILL PROGRESS */
-/* -------------- */
-.progress-bar-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: calc(100% - 2rem);
-    margin: 1rem;
-    font-family: monospace;
-}
-
-.progress-bar {
-    width: calc(50% - 1rem);
-    display: flex;
-    align-items: center;
-    margin: 0.5rem;
-    gap: 1rem;
-}
-
-.progress-bar i {
-    margin-top: 1rem;
-    font-size: 2rem;
-}
-
-.progress-detail {
-    flex: 1;
-}
-
-.progress-title {
-    margin: 0 0 5px 0;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.bar {
-    width: 100%;
-    background-color: #333333;
-    color: white;
-    border-radius: 1rem;
-    overflow: hidden;
-    height: 1.5rem;
-}
-
-.fill {
-    display: flex;
-    align-items: center;
-    padding: 0 0.5rem;
-    font-weight: bold;
-    height: 100%;
-    width: 0;
-    border-radius: 1rem;
-    color: #1c1c1c;
-    background-color: #ffcc29;
-    animation: fillBar 2s forwards;
-}
-
-@keyframes fillBar {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: var(--progress);
-    }
-}
-
-/* ----------------- */
-/* CERTIFICATION TAB */
-/* ----------------- */
-#certification {
-    background: #1b1d1a;
-    padding: 1rem;
-    border-radius: 0.5rem;
-}
-
-.certification-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.certification {
-    background: #1b1d1a;
-    color: white;
-    display: none;
-    gap: 1.5rem;
-    border-radius: 0.5rem;
-    font-family: monospace;
-}
-
-.certification.active {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-}
-
-.cert-title {
-    font-size: clamp(0.6rem, 0.8vw + 0.5rem, 1rem);
-    margin: 1rem 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-.cert-slider {
-    width: 50%;
-    position: relative;
-    overflow: hidden;
-}
-
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 0.5rem;
-    cursor: pointer;
-    user-select: none;
-    z-index: 10;
-}
-
-.prev-btn {
-    left: 0;
-}
-
-.next-btn {
-    right: 0;
-}
-
-.cert-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.cert-detail {
-    width: calc(50% - 2rem);
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    padding: 1rem;
-    font-size: 0.8rem;
-}
-
-.cert-detail p {
-    font-size: clamp(0.5rem, 0.7vw + 0.3, 1rem);
-}
-
-/* ------------ */
-/* EDUCATION TAB*/
-/* ------------ */
-#education {
-    background: #1b1d1a;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-}
-
-.ed-container {
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.ed-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.ed-content {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: calc(40% - 4rem);
-    height: 100%;
-    padding: 2rem;
-    font-size: clamp(0.6rem, 0.8vw + 0.5rem, 1rem);
-    border-radius: 0.5rem;
-    color: white;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.ed-content span {
-    font-weight: bold;
-    color: #ffcc29;
-}
 
 /* --------------- */
 /* PROJECT SECTION */
 /* --------------- */
-.project-section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    font-family: monospace;
-    font-size: clamp(1rem, 1.25vw + 0.5rem, 1.5rem);
-    width: calc(100vw - 4rem);
-    margin-left: 4rem;
-    margin-top: 4rem;
-    margin-bottom: -2rem;
-    color: white;
-}
-
-.project-section-title p {
-    position: relative;
-    font-size: clamp(1.5rem, 2vw + 0.6rem, 2.5rem);
-    margin-top: -10px;
-    word-spacing: 5px;
-}
-
-#project-section-paragraph {
-    color: #ffcc29;
-    font-family: "Bungee", sans-serif;
-}
-
-/* PROJECT CONTAINER */
 .project-container {
     display: flex;
     flex-wrap: wrap;
