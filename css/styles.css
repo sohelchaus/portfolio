@@ -405,60 +405,131 @@ body {
 /* Certification Section */
 /* --------------------- */
 .certification-section {
-  width: 100vw;
-  padding: 40px 20px;
-  text-align: center;
-  box-sizing: border-box;
+    width: 100vw;
+    padding: 40px 20px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 /* Swiper Container */
 .swiper {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .swiper-wrapper {
-  display: flex; 
+    display: flex;
 }
 
 .swiper-slide {
-  flex-shrink: 0; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .swiper-slide a {
-  display: block;
-  transition: transform 0.3s ease;
-  text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
 .swiper-slide a:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* CERTIFICATION IMAGE */
 .swiper-slide img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* CERTIFICATION NAVIGATION */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffcc29;
-  transition: color 0.3s ease;
+    color: #ffcc29;
+    transition: color 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #005fa3;
+    color: #ffcc29;
+}
+
+/* ------------- */
+/* SKILL SECTION */
+/* ------------- */
+.skill-section {
+    width: calc(100vw - 8rem);
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+.skill-set {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.skill-entry {
+    flex: 0 0 auto;
+    padding-right: 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.skills-track {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-loop {
+    display: flex;
+    gap: 1.25rem;
+    animation: scrollReset 18s linear infinite;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    background: #333333;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.skill-label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 0.625rem;
+}
+
+@keyframes scrollReset {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 
