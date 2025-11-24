@@ -497,9 +497,9 @@ body {
 }
 
 .skills-loop {
-    display: flex;
+    display: inline-flex;
     gap: 1.25rem;
-    animation: scrollReset 18s linear infinite;
+    animation: marquee 20s linear infinite;
 }
 
 .skill-bar {
