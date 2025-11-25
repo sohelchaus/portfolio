@@ -86,3 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     grabCursor: true
   });
+
+//   SKILL SECTION
+  
+
