@@ -63,7 +63,7 @@
     /* ------------- */
     /* INTRO SECTION */
     /* ------------- */
-    .intro {
+    .intro-section {
         display: flex;
         flex-direction: column;
         width: 100vw;
