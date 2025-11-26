@@ -7,76 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png" type="webp">
     <link rel="stylesheet" href="css/project.css">
+    <script defer src="js/project.js"></script>
     <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header-container">
-            <ul>
-                <li class="back-btn"><i class="fa-solid fa-house" style="color: #ffcc29;"></i>
-                    <a href="index.html#project-side">Home</a>
-                </li>
-                <li class="branding"><img src="images/logo.png" alt="logo">
-                    <p><span id="branding-title">PORT</span>Folio</p>
-                </li>
-            </ul>
+        <ul>
+            <li class="back-btn"><i class="fa-solid fa-house" style="color: #ffcc29;"></i>
+                <a href="index.html#project-side">Home</a>
+            </li>
+            <li class="branding"><img src="images/logo.png" alt="logo">
+                <p><span id="branding-title">PORT</span>Folio</p>
+            </li>
+        </ul>
     </header>
 
     <main class="project-container">
-            <!--------------->
-            <!-- LEFT SIDE -->
-            <!----=---------->
-            <div class="project-preview">
-                <header class="section-header">Preview</header>
-                <iframe src="https://sohelchaus.github.io/mini-project/calculator/index.html" target="_blank"
-                    loading="lazy" allowfullscreen frameborder="0"></iframe>
+        <!--------------->
+        <!-- LEFT SIDE -->
+        <!----=---------->
+        <div class="project-preview">
+            <header class="section-header">Preview</header>
+            <iframe src="https://sohelchaus.github.io/mini-project/calculator/index.html" target="_blank" loading="lazy"
+                allowfullscreen frameborder="0"></iframe>
+        </div>
+
+        <!---------------->
+        <!-- RIGHT SIDE -->
+        <!---------------->
+        <div class="project-tech">
+            <header class="section-header">Technology Used</header>
+
+            <svg width="0" height="0" style="position:absolute">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#ffcc29" />
+                        <stop offset="100%" stop-color="#ff5733" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <!-- SKILL ONE -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">15%</div>
+                        </div>
+                    </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+                <div class="label">HTML</div>
             </div>
 
-            <!---------------->
-            <!-- RIGHT SIDE -->
-            <!---------------->
-            <div class="project-tech">
-                <header class="section-header">Technology Used</header>
-
-                <!-- ----- -->
-                <!-- FIRST -->
-                <!-- ----- -->
-                <div class="progress-bar-container">
-                    <i class="fa-brands fa-html5" style="color: #ffcc29;"></i>
-                    <div class="progress-bar">
-                        <h2>HTML</h2>
-                        <div class="bar">
-                            <div class="fill" style="--progress: 50%">50%</div>
+            <!-- SKILL TWO -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">70%</div>
                         </div>
                     </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
                 </div>
-
-                <!-- ------ -->
-                <!-- SECOND -->
-                <!-- ------ -->
-                <div class="progress-bar-container">
-                    <i class="fa-brands fa-css" style="color: #ffcc29;"></i>
-                    <div class="progress-bar">
-                        <h2>CSS</h2>
-                        <div class="bar">
-                            <div class="fill" style="--progress: 80%">80%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ----- -->
-                <!-- THIRD -->
-                <!-- ----- -->
-                <div class="progress-bar-container">
-                    <i class="fa-brands fa-square-js" style="color: #ffcc29;"></i>
-                    <div class="progress-bar">
-                        <h2>JS</h2>
-                        <div class="bar">
-                            <div class="fill" style="--progress: 50%">50%</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="label">CSS</div>
             </div>
+
+            <!-- SKILL THREE -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">50%</div>
+                        </div>
+                    </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+                <div class="label">JS</div>
+            </div>
+
+
+        </div>
 
         </div>
 

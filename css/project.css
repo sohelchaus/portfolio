@@ -1,8 +1,8 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
 }
 
 :root {
@@ -10,6 +10,8 @@
     --secondary-color: #202020;
     --tertiary-color: #FFCC2A;
     --quaternary-color: #0A5A4C;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -128,7 +130,7 @@ body {
 .project-preview {
     display: flex;
     flex-direction: column;
-    width: calc(50vw - 4rem);
+    width: calc(70vw - 4rem);
     margin: 0 2rem;
     height: auto;
 }
@@ -136,65 +138,84 @@ body {
 .project-preview iframe {
     width: calc(100% - 4rem) !important;
     margin: 0 2rem;
-    height: 40rem !important;
+    height: 35rem !important;
 }
 
 /* ---------- */
 /* RIGHT SIDE */
 /* ---------- */
 .project-tech {
-    width: calc(50vw - 4rem);
+    width: calc(30vw - 4rem);
+    height: auto;
     margin: 0 2rem;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.progress-bar-container {
-    width: calc(100% - 2rem);
-    height: auto;
-    margin-right: 2rem;
+.skill {
+    width: 80px;
+    height: 80px;
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    margin-bottom: 3rem;
 }
 
-.progress-bar-container i {
-    font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem);
+.outer {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
+        -3px -3px 5px -1px rgba(255, 255, 255, 0.7);
 }
 
-/* ------------------- */
-/* PROGRESS BAR | LEFT */
-/* ------------------- */
-.progress-bar {
-    width: 100%;
-    height: auto;
+.inner {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    width: 60px;
+    /* scaled down from 120px */
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 3px -1px rgba(0, 0, 0, 0.2),
+        inset -2px -2px 3px -1px rgba(255, 255, 255, 0.7),
+        -0.25px -0.25px 0px rgba(255, 255, 255, 1),
+        0.25px 0.25px 0 rgba(0, 0, 0, 0.15),
+        0px 6px 5px -5px rgba(0, 0, 0, 0.05);
 }
 
-.project-bar h2 {
-    display: flex;
-    text-align: left;
-    width: 100%;
-    height: auto;
+#number {
+    font-weight: 600;
+    font-size: 15px;
 }
 
-.bar {
-    background-color: var(--primary-color);
-    border-radius: 1rem;
-    width: 100%;
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.fill {
-    height: 100%;
-    width: 0;
-    padding: 0.5rem;
-    font-weight: bold;
-    border-radius: 1rem;
-    color: var(--secondary-color);
-    background-color: var(--tertiary-color);
-    animation: fillBar 2s forwards;
+circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+    transition: stroke-dashoffset 1s ease;
 }
+
+.label {
+    margin-top: 5px;
+    text-align: center;
+    font-size: clamp(0.8rem, 1vw + 0.3rem, 1.5rem);
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
 
 /* ----------- */
 /* BOTTOM SIDE */
@@ -215,16 +236,6 @@ body {
 .features-list {
     margin-left: 2rem;
     font-size: clamp(0.5rem, 0.8vw + 0.5rem, 1rem);
-}
-
-@keyframes fillBar {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: var(--progress);
-    }
 }
 
 /* ------------- */
@@ -276,9 +287,9 @@ body {
     /* RIGHT SIDE - OVERVIEW */
     /* --------------------- */
     .project-overview {
-        width: 100%;
+        width: calc(100vw - 4rem);
         height: auto;
-        margin: 1rem 0;
+        margin: 1rem 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -294,21 +305,5 @@ body {
         width: 100%;
         height: auto;
         padding: 1rem;
-    }
-
-    /* PROGRESS BAR */
-    .progress-bar-container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .progress-bar {
-        width: calc(100% - 2rem);
-        height: auto;
-        margin: 0 1rem;
-        display: flex;
-        align-items: center;
     }
 }

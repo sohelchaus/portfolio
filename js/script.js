@@ -88,25 +88,22 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 //   SKILL SECTION
-function setProgress(percent, labelText) {
-    const numberEl = document.getElementById("number");
-    const circle = document.querySelector("circle");
-    const labelEl = document.getElementById("skill-label");
+function setAllProgress() {
+  // Loop through every skill block
+  document.querySelectorAll(".skill").forEach(skill => {
+    const numberEl = skill.querySelector(".number");   // use class
+    const circle = skill.querySelector("circle");      // each skill has its own circle
+    const percent = parseInt(numberEl.textContent);    // read percentage
 
-    // Update text
-    numberEl.innerText = percent + "%";
-    labelEl.innerText = labelText;
-
-    // Circle math
-    const radius = circle.r.baseVal.value; // 70px
+    const radius = circle.r.baseVal.value;             // 35px
     const circumference = 2 * Math.PI * radius;
 
+    circle.style.stroke = "url(#GradientColor)";       // apply gradient
     circle.style.strokeDasharray = circumference;
-    const offset = circumference - (percent / 100) * circumference;
-    circle.style.strokeDashoffset = offset;
+    circle.style.strokeDashoffset = circumference - (percent / 100) * circumference;
+  });
 }
 
-// Example usage: show only one progress at a time
-setProgress(65, "HTML");
-
+// Run once on load
+setAllProgress();
 

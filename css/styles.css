@@ -188,6 +188,7 @@ body {
 }
 
 .highlight-text {
+    font-size: clamp(1rem, 1.5vw + 0.6rem, 2rem);
     color: var(--tertiary-color);
     font-weight: bold;
 }
@@ -463,66 +464,6 @@ body {
 /* ------------- */
 /* SKILL SECTION */
 /* ------------- */
-.skill {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.outer {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  padding: 10px; /* scaled down from 20px */
-  box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.15),
-              -3px -3px 5px -1px rgba(255, 255, 255, 0.7);
-}
-
-.inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;   /* scaled down from 120px */
-  height: 60px;
-  border-radius: 50%;
-  box-shadow: inset 2px 2px 3px -1px rgba(0, 0, 0, 0.2),
-              inset -2px -2px 3px -1px rgba(255, 255, 255, 0.7),
-              -0.25px -0.25px 0px rgba(255, 255, 255, 1),
-              0.25px 0.25px 0 rgba(0, 0, 0, 0.15),
-              0px 6px 5px -5px rgba(0, 0, 0, 0.05);
-}
-
-#number {
-  font-weight: 600;
-  font-size: 15px; /* scaled down from 30px */
-}
-
-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-circle {
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 10px; /* scaled down from 20px */
-  stroke-dasharray: 220; /* circumference ~ 2πr with r=35 */
-  stroke-dashoffset: 220; /* start hidden */
-  transition: stroke-dashoffset 1s ease;
-}
-
-.label {
-  margin-top: 5px; /* scaled down from 10px */
-  text-align: center;
-  font-size: 9px;  /* scaled down from 18px */
-  font-weight: 500;
-  color: #333;
-}
-
 
 
 /* --------------- */
@@ -558,11 +499,12 @@ circle {
     align-items: center;
     padding: 1rem;
 }
-    
+
 .project-footer a i {
     font-size: 1rem;
     transform: rotate(-90deg);
 }
+
 /* Text Section */
 .project-info {
     flex: 1;
