@@ -173,7 +173,6 @@ body {
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    font-family: monospace;
 }
 
 .services-text {
@@ -183,7 +182,7 @@ body {
 
 .section-title p {
     font-size: clamp(1rem, 1.5vw + 0.6rem, 2rem);
-    font-weight: bold;
+    font-family: "Bungee", sans-serif;
     margin: 0;
 }
 
