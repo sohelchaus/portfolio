@@ -169,7 +169,7 @@ body {
 .section-title {
     width: calc(100vw - 8rem);
     height: auto;
-    margin: 0 4rem;
+    margin: 2rem 4rem;
     display: flex;
     justify-content: flex-start;
     text-align: left;
@@ -192,8 +192,6 @@ body {
     color: var(--tertiary-color);
     font-weight: bold;
 }
-
-
 
 /* ------------- */
 /* INTRO SECTION */
@@ -464,7 +462,88 @@ body {
 /* ------------- */
 /* SKILL SECTION */
 /* ------------- */
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: calc(100vw - 8rem);
+    gap: 4rem;
+    padding: 1rem 0;
+}
 
+.skill-box {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.icon-area {
+    height: 7rem;
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.icon-area i {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+    color: var(--secondary-color);
+}
+
+.dock {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: height 0.4s ease;
+}
+
+.label {
+    margin-top: 3rem;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: transform 0.4s ease;
+}
+
+.skill-box:hover .dock {
+    height: 100%;
+}
+
+.skill-box:hover .icon-area {
+    opacity: 0;
+}
+
+.skill-box:hover .label {
+    transform: translateY(-3rem);
+}
+
+.caption {
+    color: var(--secondary-color);
+  opacity: 0;               
+  transform: translateY(1rem); 
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.skill-box:hover .caption {
+  opacity: 1;               
+  transform: translateY(0);   
+}
 
 /* --------------- */
 /* PROJECT SECTION */
