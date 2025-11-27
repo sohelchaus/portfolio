@@ -188,6 +188,7 @@ body {
 
 .highlight-text {
     font-size: clamp(1rem, 1.5vw + 0.6rem, 2rem);
+    font-family: "Bungee", sans-serif;
     color: var(--tertiary-color);
     font-weight: bold;
 }
