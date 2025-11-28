@@ -103,50 +103,35 @@
     /* ABOUT SECTION */
     /* ------------- */
     .skill-box {
-    width: 7rem;
-    height: 7rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     .label {
-    padding-top: 5rem;
+        padding-top: 5rem;
     }
 
     /* --------------- */
     /* PROJECT SECTION */
     /* --------------- */
     .project-box {
-    width: calc(100vw - 4rem);
-    height: auto;
+        width: calc(100vw - 4rem);
+        height: auto;
     }
 
     /* -------------- */
     /* FOOTER SECTION */
     /* -------------- */
-
-    .footer-container {
-        width: 100%;
-        height: auto;
+    .footer-top {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        padding: 1rem 0.5rem;
+        align-items: center;
+        text-align: left;
     }
 
-    .social-icons {
-        gap: 1rem;
-    }
-
-    .footer-section ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-section ul li {
-        padding: 1rem;
-    }
-
-    .footer-bottom {
-        display: flex;
-        flex-direction: column;
+    .footer-branding {
+        margin-top: 2rem;
     }
 
 }
