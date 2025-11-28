@@ -60,28 +60,30 @@
         margin: 0 1rem;
     }
 
+    /* SECTION TITLE */
+    .section-title {
+        width: calc(100vw - 4rem);
+        height: auto;
+        margin: 1rem 2rem;
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
     /* ------------- */
     /* INTRO SECTION */
     /* ------------- */
     .intro-section {
         display: flex;
         flex-direction: column;
-        width: 100vw;
-        height: auto;
     }
 
-    .social-container {
+    .social-container,
+    .profile-container {
         width: calc(100% - 4rem);
         height: auto;
         margin: 0 2rem;
         top: 5%;
-    }
-
-    .profile-container {
-        display: flex;
-        width: calc(100% - 4rem);
-        height: auto;
-        margin: 0 2rem;
     }
 
     .profile-image img {
@@ -97,116 +99,17 @@
         margin-top: 2rem;
     }
 
-    /* --------------- */
-    /* SERVICE SECTION */
-    /* --------------- */
-    .services-title {
-        width: calc(100vw - 2rem);
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .services-container {
-        width: calc(100vw - 4rem);
-        gap: 2rem;
-    }
-
     /* ------------- */
     /* ABOUT SECTION */
     /* ------------- */
-    .about-title {
-        width: calc(100vw - 2rem);
-        margin-left: 2rem;
+    .skill-box {
+    width: 7rem;
+    height: 7rem;
     }
 
-    .about {
-        width: calc(100% - 2rem);
-        margin: 0 1rem;
+    .label {
+    padding-top: 5rem;
     }
-
-    .about-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    .about-left {
-        display: none;
-    }
-
-    .about-right {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tabs {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        gap: 0.5rem;
-    }
-
-    .tab-link {
-        padding: 1rem 0.5rem;
-    }
-
-    /* SKILL TAB */
-    .progress-bar-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: calc(100% - 1rem);
-        margin: 0.5rem;
-        font-family: monospace;
-    }
-
-    .progress-bar {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-
-    /* EDUCATION TAB */
-    .ed-content {
-        width: calc(80% - 2rem);
-        height: 100%;
-        padding: 1rem;
-    }
-
-    /* CERTIFICATION TAB */
-
-    .certification {
-        gap: 0;
-    }
-
-    .certification.active {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-
-    .cert-title {
-        margin: 0.5rem 0;
-    }
-
-    .cert-slider {
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .cert-detail {
-        width: calc(100% - 1rem);
-        padding: 0.5rem;
-    }
-
 
     /* --------------- */
     /* PROJECT SECTION */
@@ -215,13 +118,6 @@
         width: calc(100vw - 2rem);
         height: auto;
         margin: 0 1rem;
-    }
-
-    .project-section-title {
-        width: calc(100vw - 2rem);
-        margin-left: 2rem;
-        margin-top: 2rem;
-        margin-bottom: -1rem;
     }
 
     .project-box {
