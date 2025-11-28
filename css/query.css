@@ -114,29 +114,9 @@
     /* --------------- */
     /* PROJECT SECTION */
     /* --------------- */
-    .project-container {
-        width: calc(100vw - 2rem);
-        height: auto;
-        margin: 0 1rem;
-    }
-
     .project-box {
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 2rem);
-        height: auto;
-        margin: 1rem;
-    }
-
-    .project-image img {
-        padding: 0 2rem;
-    }
-
-    .project-caption {
-        display: flex;
-        width: 100%;
-        height: 2rem;
-        padding: 3rem;
+    width: calc(100vw - 4rem);
+    height: auto;
     }
 
     /* -------------- */

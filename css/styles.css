@@ -548,15 +548,18 @@ body {
 /* PROJECT SECTION */
 /* --------------- */
 .project-section {
-    width: 100%;
+    width: calc(100vw - 4rem);
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 .project-box {
-    width: calc(50% - 4rem);
-    margin: 2rem;
+    width: calc(50vw - 4rem);
+    height: auto;
     border-radius: 0.5rem;
     overflow: hidden;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
@@ -589,13 +592,14 @@ body {
 }
 
 .project-info h2 {
-    font-size: 1.4rem;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
+    font-weight: bold;
     margin: 0;
     color: var(--secondary-color);
 }
 
 .project-info p {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1vw + 0.5rem, 1.5rem);
     color: var(--secondary-color);
     margin-top: 0.3rem;
 }
@@ -603,7 +607,6 @@ body {
 /* Circular Button */
 .circle-button {
     width: 2.5rem;
-    /* 40px */
     height: 2.5rem;
     line-height: 2.5rem;
     border-radius: 50%;
