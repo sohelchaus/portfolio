@@ -111,13 +111,13 @@
         padding-top: 5rem;
     }
 
-    .education-section {
+    .edu-detail {
         display: flex;
         flex-direction: column;
+        padding: 0.5rem;
     }
 
-    .edu-left,
-    .edu-right {
+    .edu-left, .edu-right {
         width: 100%;
         height: auto;
     }
