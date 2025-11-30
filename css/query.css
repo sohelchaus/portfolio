@@ -111,6 +111,17 @@
         padding-top: 5rem;
     }
 
+    .education-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edu-left,
+    .edu-right {
+        width: 100%;
+        height: auto;
+    }
+
     /* --------------- */
     /* PROJECT SECTION */
     /* --------------- */
@@ -118,6 +129,8 @@
         width: calc(100vw - 4rem);
         height: auto;
     }
+
+
 
     /* -------------- */
     /* FOOTER SECTION */
