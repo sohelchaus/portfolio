@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -11,6 +10,7 @@
     --secondary-color: #202020;
     --tertiary-color: #FFCC2A;
      font-size: 16px;
+     font-family: "JetBrains Mono", monospace;
 }
 
 body {
@@ -45,7 +45,7 @@ body {
 
 .ct-title {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: clamp(1.38rem, 1.44rem, 1.50rem);  
     text-align: left;
 }
 
@@ -65,7 +65,7 @@ body {
 
 .social-links a i {
     color: var(--tertiary-color);
-    font-size: 1.5rem;
+    font-size: clamp(1.38rem, 1.44rem, 1.50rem);  
     object-fit: contain;
 }
 
@@ -101,7 +101,7 @@ form {
 
 .field, .area i {
     color: var(--tertiary-color);
-    font-size: 1rem;
+    font-size: clamp(1.38rem, 1.44rem, 1.50rem);  
     object-fit: contain;
 }
 
@@ -296,7 +296,7 @@ form button {
   padding: 12px 20px;
   margin-top: 15px;
   border-radius: 6px;
-  font-size: 15px;
+  font-size: clamp(1.00rem, 1.06rem, 1.13rem);  
   font-weight: 500;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -324,12 +324,12 @@ form button {
 
 .icon-check::before {
   content: "✔️";
-  font-size: 18px;
+  font-size: clamp(1.00rem, 1.06rem, 1.13rem);  
 }
 
 .icon-error::before {
   content: "❌";
-  font-size: 18px;
+  font-size: clamp(1.00rem, 1.06rem, 1.13rem);  
 }
 
 
