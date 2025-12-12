@@ -46,7 +46,7 @@ body {
 /* ------------------- */
 .header-container i {
     display: none;
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     color: var(--tertiary-color);
     cursor: pointer;
 }
@@ -68,12 +68,12 @@ body {
 
 .branding h1 {
     color: var(--primary-color);
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     font-weight: bold;
 }
 
 #branding-title {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     color: var(--tertiary-color);
 }
 
@@ -92,7 +92,7 @@ body {
 }
 
 .nav-links li a {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -104,7 +104,7 @@ body {
 /* MENU-TOGGLE */
 .menu-toggle {
     display: none;
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     cursor: pointer;
 }
 
@@ -128,7 +128,7 @@ body {
     display: inline;
     margin: 0;
     padding: 0.5rem 1rem;
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     border-radius: 0.5rem;
     list-style-type: none;
     color: var(--secondary-color);
@@ -176,18 +176,18 @@ body {
 }
 
 .section-title p {
-    font-size: clamp(1.75rem, 1.80rem, 1.88rem);
+    font-size: clamp(1.70rem, 1.80rem, 1.90rem);  
     font-family: "Bungee", sans-serif;
     margin: 0;
 }
 
 .services-text {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     font-weight: normal;
 }
 
 .highlight-text {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     font-family: "Bungee", sans-serif;
     color: var(--tertiary-color);
     font-weight: bold;
@@ -237,7 +237,7 @@ body {
 }
 
 .social-links i {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     transition: filter 0.3s ease-in-out;
     text-decoration: none;
     object-fit: contain;
@@ -252,7 +252,7 @@ body {
 .animated-text {
     width: 100%;
     font-family: "Bungee", sans-serif;
-    font-size: clamp(1.75rem, 1.80rem, 1.88rem);
+    font-size: clamp(1.70rem, 1.80rem, 1.90rem);  
     text-wrap: nowrap;
     overflow: hidden;
     animation: typing 2s steps(20) infinite alternate-reverse;
@@ -270,7 +270,7 @@ body {
     text-align: justify;
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
 }
 
 /* RIGHT SIDE */
@@ -327,7 +327,7 @@ body {
 
 .stat-box {
     text-align: center;
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
 }
 
 .stat-box i {
@@ -335,7 +335,7 @@ body {
 }
 
 .count {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     color: var(--primary-color);
 }
 
@@ -375,17 +375,17 @@ body {
 }
 
 .service-box i {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     margin-bottom: 10px;
 }
 
 .service-box h2 {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     font-weight: bold;
 }
 
 .service-box p {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
 }
 
 .service-box:nth-child(1) i {
@@ -442,7 +442,7 @@ body {
 }
 
 .icon-area i {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     color: var(--secondary-color);
 }
 
@@ -461,7 +461,7 @@ body {
 .label {
     padding-top: 4rem;
     font-weight: bold;
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     transition: transform 0.4s ease;
     color: var(--secondary-color);
 }
@@ -476,7 +476,7 @@ body {
 }
 
 .icon-area i {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
 }
 
 .skill-box:hover .label {
@@ -485,7 +485,7 @@ body {
 
 .caption {
     font-weight: normal;
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     opacity: 0;
     transform: translateY(1rem);
     transition: opacity 0.4s ease, transform 0.4s ease;
@@ -576,7 +576,7 @@ body {
     flex-direction: row;
     padding: 1rem;
     border-radius: 0.5rem;
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -663,7 +663,7 @@ body {
 }
 
 .project-footer a i {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     transform: rotate(-90deg);
 }
 
@@ -673,14 +673,14 @@ body {
 }
 
 .project-info h2 {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
     font-weight: bold;
     margin: 0;
     color: var(--secondary-color);
 }
 
 .project-info p {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     color: var(--secondary-color);
     margin-top: 0.3rem;
 }
@@ -732,7 +732,7 @@ body {
 
 .footer-quick h2,
 .footer-social h2 {
-    font-size: clamp(1.38rem, 1.44rem, 1.50rem);
+    font-size: clamp(1.30rem, 1.40rem, 1.50rem);
 }
 
 .footer-quick ul,
@@ -748,7 +748,7 @@ body {
 
 .footer-quick li a,
 .footer-social li a {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     text-decoration: none;
     transition: color 0.3s ease;
     color: var(--primary-color);
@@ -760,7 +760,7 @@ body {
 }
 
 .footer-bottom {
-    font-size: clamp(1.00rem, 1.06rem, 1.13rem);
+    font-size: clamp(1.00rem, 1.05rem, 1.10rem); 
     text-align: center;
     margin-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
