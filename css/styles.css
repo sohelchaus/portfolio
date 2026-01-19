@@ -419,8 +419,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: 0.5rem;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .skill-top {
@@ -534,6 +534,7 @@ body {
     justify-content: center;
     padding: 2rem;
     border-radius: 0.5rem;
+    line-height: 1.5rem;
 }
 
 .edu-left i {
@@ -655,7 +656,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding-top: 2rem;
     gap: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
