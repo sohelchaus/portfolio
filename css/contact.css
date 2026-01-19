@@ -144,6 +144,8 @@ textarea {
     border: none;   
     border-radius: 0.5rem;
     margin: 0.5rem 1rem;
+    resize: none;
+    overflow-y: auto;
 }
 
 .field textarea {
