@@ -14,6 +14,15 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+h2,
+i {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+}
+
+p, li {
+    font-size: clamp(0.8rem, 0.5vw + 0.5rem, 1.2rem);
+}
+
 body {
     width: 100vw;
     height: 100Vh;
@@ -59,7 +68,6 @@ body {
 }
 
 .back-btn i {
-    font-size: clamp(1.30rem, 1.40rem, 1.50rem);   
     padding-right: 1rem;
     cursor: pointer;
     color: var(--tertiary-color);
@@ -67,7 +75,6 @@ body {
 
 .back-btn a {
     font-weight: bold;
-    font-size: clamp(1.30rem, 1.40rem, 1.50rem);   
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -91,7 +98,6 @@ body {
 }
 
 .branding p {
-    font-size: clamp(1.30rem, 1.40rem, 1.50rem);   
     font-weight: bold;
     color: var(--primary-color);
 }
@@ -118,7 +124,6 @@ body {
     margin: 2rem;
     font-weight: bold;
     text-align: left;
-    font-size: clamp(1.30rem, 1.40rem, 1.50rem);   
 }
 
 /* --------- */
@@ -150,13 +155,11 @@ body {
 }
 
 .project-overview p {
-    font-size: clamp(1.00rem, 1.05rem, 1.10rem);  
     padding: 2rem 1rem;
 }
 
 .features-list {
     margin-left: 2rem;
-    font-size: clamp(1.00rem, 1.05rem, 1.10rem);  
     list-style-type: none;
 }
 
@@ -213,7 +216,6 @@ body {
 
 #number {
     font-weight: 600;
-    font-size: clamp(1.00rem, 1.05rem, 1.10rem);  
 }
 
 svg {
@@ -234,7 +236,6 @@ circle {
 .label {
     margin-top: 5px;
     text-align: center;
-    font-size: clamp(1.00rem, 1.05rem, 1.10rem);  
     font-weight: 500;
     color: var(--primary-color);
 }
