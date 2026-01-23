@@ -2,26 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>Sohel Alkasiri | Calculator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png" type="webp">
-    <link rel="stylesheet" href="css/project.css">
-    <script defer src="js/project.js"></script>
+    <link rel="stylesheet" href="css/project-ui.css">
+    <title>Calculator | Sohel Chaus</title>
+    <!-- Font -->
     <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
+     <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <header class="header-container">
-        <ul>
-            <li class="back-btn"><i class="fa-solid fa-house" style="color: #ffcc29;"></i>
-                <a href="index.html#project-side">Home</a>
-            </li>
-            <li class="branding"><img src="images/logo.png" alt="logo">
-                <p><span id="branding-title">PORT</span>Folio</p>
-            </li>
-        </ul>
-    </header>
+    
+    <header id="header-section"></header>
 
     <main class="project-container">
         <!--------------->
@@ -51,7 +47,6 @@
             </ul>
             </p>
         </div>
-
         </div>
 
         <!----------------->
@@ -115,6 +110,16 @@
         </div>
         
     </main>
+
+    <footer id="footer-section"></footer>
+
+    <script defer src="js/project.js"></script>
+    <script>
+        $(function () {
+            $("#header-section").load("header.html");
+            $("#footer-section").load("footer.html");
+        });
+    </script>
 </body>
 
 </html>

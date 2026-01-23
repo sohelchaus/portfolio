@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary-color: #FFFFFF;
+            --secondary-color: #202020;
+            --tertiary-color: #FFCC2A;
+            --quaternary-color: #0A5A4C;
+            font-size: 16px;
+            font-family: "JetBrains Mono", monospace;
+        }
+
+        h2,
+        i {
+            font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+        }
+
+        p,
+        li {
+            font-size: clamp(0.8rem, 0.5vw + 0.5rem, 1.2rem);
+        }
+
+        body {
+            height: 100Vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+
+        /* -------------- */
+        /* FOOTER SECTION */
+        /* -------------- */
+        .footer-section {
+            padding: 2rem;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 2rem;
+            gap: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-branding {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-branding img {
+            width: 2rem;
+            height: 2rem;
+            object-fit: contain;
+        }
+
+        .footer-quick ul,
+        .footer-social ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-quick li,
+        .footer-social li {
+            margin: 0.5rem 0;
+        }
+
+        .footer-quick li a,
+        .footer-social li a {
+            text-decoration: none;
+            transition: color 0.3s ease;
+            color: var(--primary-color);
+        }
+
+        .footer-quick a:hover,
+        .footer-social a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* MEDIA QUERY */
+        @media (max-width: 767px) and (min-width: 320px) {
+
+            .footer-top {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+                padding-top: 1rem;
+            }
+
+            .footer-branding {
+                margin-top: 2rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+   
+    <footer class="footer-section">
+
+        <div class="footer-top">
+            <!-- Branding -->
+            <div class="footer-branding">
+                <img src="images/logo.png" alt="brand image">
+            </div>
+
+            <!-- Portfolio Links -->
+            <div class="footer-quick">
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="https://drive.google.com/file/d/1tZmbXjBfxe9uDjtqwb4EOclWMwpUkmxo/view?usp=drivesdk"
+                            target="_blank">CV</a></li>
+                    <li><a href="#github">GitHub</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sohel-chaus-4a194a360" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/mr.sohelchaus" aria-label="Instagram"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/mr.sohelchaus" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Sohel Chaus | All rights reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

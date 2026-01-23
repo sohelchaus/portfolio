@@ -1,44 +1,7 @@
 @media (max-width: 767px) and (min-width: 320px) {
-    .header-container {
-        padding: 1.5rem;
-    }
-
-    /* MENU TOGGLE */
-    .menu-toggle {
-        display: block;
-        position: relative;
-        color: white;
-        z-index: 1001;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        top: 10%;
-        left: 0;
-        right: 0;
-        padding: 1rem 2rem;
-        font-weight: bold;
-        background-color: #202020;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: left;
-    }
-
-    .nav-links li {
-        padding-bottom: 1rem;
-        margin: 0;
-    }
-
-
+    /* ---- */
     /* MAIN */
+    /* ---- */
     .main-container {
         width: calc(100% - 1rem);
         height: auto;
@@ -65,16 +28,12 @@
         object-fit: contain;
     }
 
-    /* ------ */
-    /* RATING */
-    /* ------ */
+    /* RATING SECTION */
     .rating-container {
         margin-top: 2rem;
     }
 
-    /* ------------- */
     /* ABOUT SECTION */
-    /* ------------- */
     .skill-box {
         width: calc(50% - 1rem);
         height: auto;
@@ -82,9 +41,7 @@
 
     
 
-    /* ----------- */
     /* EDU SECTION */
-    /* ----------- */
     .edu-detail {
         display: flex;
         flex-direction: column;
@@ -96,30 +53,10 @@
         height: auto;
     }
 
-    /* --------------- */
     /* PROJECT SECTION */
-    /* --------------- */
     .project-box {
         width: calc(100% - 2rem);
         height: auto;
-    }
-
-
-
-    /* -------------- */
-    /* FOOTER SECTION */
-    /* -------------- */
-    .footer-top {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-        padding-top: 1rem;
-    }
-
-    .footer-branding {
-        margin-top: 2rem;
     }
 
 }

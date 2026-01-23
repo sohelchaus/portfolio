@@ -27,83 +27,10 @@ body {
     width: 100vw;
     height: 100Vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: hidden;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-}
-
-/* -------------- */
-/* HEADER SECTION */
-/* -------------- */
-.header-container {
-    width: calc(100% - 4rem);
-    height: auto;
-    display: flex;
-    margin: 2rem;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-}
-
-/* ------------------- */
-/* MENU BAR FOR MOBILE */
-/* ------------------- */
-
-.header-container ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-}
-
-/* ----------- */
-/* BACK BUTTON */
-/* ----------- */
-.back-btn {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-}
-
-.back-btn i {
-    padding-right: 1rem;
-    cursor: pointer;
-    color: var(--tertiary-color);
-}
-
-.back-btn a {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.back-btn a:hover {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* -------- */
-/* BRANDING */
-/* -------- */
-.branding {
-    display: flex;
-    align-items: center;
-}
-
-.branding img {
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-right: 0.5rem;
-}
-
-.branding p {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-#branding-title {
-    color: var(--tertiary-color);
 }
 
 /* ------------ */
@@ -126,9 +53,7 @@ body {
     text-align: left;
 }
 
-/* --------- */
 /* LEFT SIDE */
-/* --------- */
 .project-preview {
     display: flex;
     flex-direction: column;
@@ -143,9 +68,7 @@ body {
     height: 35rem !important;
 }
 
-/* ---------- */
 /* RIGHT SIDE */
-/* ---------- */
 .project-overview {
     width: calc(50% - 4rem);
     height: auto;
@@ -168,13 +91,12 @@ body {
 }
 
 
-/* ----------- */
 /* BOTTOM SIDE */
-/* ----------- */
 .project-tech {
     width: calc(100% - 4rem);
     height: auto;
     margin: 0 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
