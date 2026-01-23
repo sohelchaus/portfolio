@@ -24,9 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// -------------
-// CERTIFICATION
-// -------------
+// CERTIFICATION SECTION
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     slidesPerView: 1,
