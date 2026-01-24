@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #202020;
-    --tertiary-color: #FFCC2A;
-    --quaternary-color: #0A5A4C;
+    --bg-color: #FFFFFF;
+    --fg-color: #202020;
+    --accent-01: #FFCC2A;
+    --accent-02: #0A5A4C;
     --radius: 0.5rem;
     font-size: 16px;
     font-family: "JetBrains Mono", monospace;
@@ -45,7 +45,7 @@ p, li {
 
 .highlight-text {
     font-family: "Bungee", sans-serif;
-    color: var(--tertiary-color);
+    color: var(--accent-01);
 }
 
 
@@ -55,8 +55,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    background-color: var(--fg-color);
 }
 
 /* ------------ */
@@ -98,7 +98,7 @@ body {
     position: relative;
     text-align: left;
     top: 10%;
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 .social-links {
@@ -118,11 +118,11 @@ body {
     transition: filter 0.3s ease-in-out;
     text-decoration: none;
     object-fit: contain;
-    color: var(--primary-color)
+    color: var(--bg-color)
 }
 
 .social-links i:hover {
-    color: var(--quaternary-color)
+    color: var(--accent-02)
 }
 
 .animated-text {
@@ -132,7 +132,7 @@ body {
     text-wrap: nowrap;
     overflow: hidden;
     animation: typing 2s steps(20) infinite alternate-reverse;
-    color: var(--tertiary-color);
+    color: var(--accent-01);
 }
 
 @keyframes typing {
@@ -145,7 +145,7 @@ body {
     width: 100%;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 
@@ -157,7 +157,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 .stat-box {
@@ -173,11 +173,11 @@ body {
     gap: 0.5rem;
 }
 .stat-box i {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
 }
 
 .count {
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 /* RIGHT SIDE */
@@ -204,7 +204,7 @@ body {
     pointer-events: none;
     z-index: 1;
     user-select: none;
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 /* Foreground image */
@@ -241,16 +241,16 @@ body {
     border-radius: var(--radius);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
 }
 
 .service-box:hover {
     cursor: pointer;
     transform: scale(1.05);
-    outline: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    outline: 2px solid var(--bg-color);
+    color: var(--bg-color);
+    background-color: var(--fg-color);
 }
 
 .service-box i {
@@ -301,7 +301,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border-radius: var(--radius);;
-    color: var(--primary-color);
+    color: var(--bg-color);
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -376,13 +376,13 @@ body {
 /* CERTIFICATION NAVIGATION */
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
     transition: color 0.3s ease;
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
 }
 
 /* ----------------- */
@@ -404,7 +404,7 @@ body {
     flex-direction: row;
     padding: 1rem;
     border-radius: var(--radius);
-    color: var(--primary-color);
+    color: var(--bg-color);
     background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -420,7 +420,7 @@ body {
 }
 
 .edu-left i {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
 }
 
 .edu-right {
@@ -442,8 +442,8 @@ body {
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    color: var(--secondary-color);
-    background-color: var(--tertiary-color);
+    color: var(--fg-color);
+    background-color: var(--accent-01);
 }
 
 .cv-button:hover {
@@ -470,8 +470,8 @@ body {
     padding: 1rem;
     border-radius: var(--radius);
     overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Thumbnail Image */
@@ -502,11 +502,11 @@ body {
 .project-info h2 {
     font-weight: bold;
     margin: 0;
-    color: var(--secondary-color);
+    color: var(--bg-color);
 }
 
 .project-info p {
-    color: var(--secondary-color);
+    color: var(--bg-color);
     margin-top: 0.3rem;
 }
 
@@ -516,11 +516,10 @@ body {
     height: 2.5rem;
     line-height: 2.5rem;
     border-radius: var(--radius);
-    font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
     flex-shrink: 0;
-    color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--fg-color);
+    background-color: var(--accent-01);
 }

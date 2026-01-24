@@ -6,10 +6,10 @@
 }
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #202020;
-    --tertiary-color: #FFCC2A;
-    --quaternary-color: #0A5A4C;
+    --bg-color: #FFFFFF;
+    --fg-color: #202020;
+    --accent-01: #FFCC2A;
+    --accent-02: #0A5A4C;
     font-size: 16px;
     font-family: "JetBrains Mono", monospace;
 }
@@ -29,8 +29,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    background-color: var(--fg-color);
 }
 
 /* ------------ */
@@ -90,6 +90,9 @@ body {
     margin-bottom: 1rem;
 }
 
+.features-list li i {
+    color: var(--accent-01);
+}
 
 /* BOTTOM SIDE */
 .project-tech {
@@ -159,7 +162,7 @@ circle {
     margin-top: 5px;
     text-align: center;
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--bg-color);
 }
 
 

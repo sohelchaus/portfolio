@@ -6,9 +6,10 @@
 }
 
 :root {
-    --primary-color: #FFFFFF;
-    --secondary-color: #202020;
-    --tertiary-color: #FFCC2A;
+    --bg-color: #FFFFFF;
+    --fg-color: #202020;
+    --accent-01: #FFCC2A;
+    --accent-02: #0A5A4C;
      font-size: 16px;
      font-family: "JetBrains Mono", monospace;
 }
@@ -29,8 +30,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--fg-color);
+    color: var(--bg-color);
 }
 
 .contact-form {
@@ -72,7 +73,7 @@ body {
 }
 
 .social-links a i {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
     object-fit: contain;
 }
 
@@ -107,7 +108,7 @@ form {
 }
 
 .field, .area i {
-    color: var(--tertiary-color);
+    color: var(--accent-01);
     object-fit: contain;
 }
 
@@ -165,8 +166,8 @@ form button {
     margin: 0.5rem 1rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    background-color: var(--accent-01);
+    color: var(--fg-color);
     font-weight: bold;
     cursor: pointer;
 }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="webp">
+    <link rel="stylesheet" href="css/project-ui.css">
+    <title>Calculator | Sohel Chaus</title>
+    <!-- Font -->
+    <script src="https://kit.fontawesome.com/ec2b7aebf5.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <header id="header-section"></header>
+
+    <main class="project-container">
+        <!--------------->
+        <!-- LEFT SIDE -->
+        <!----=---------->
+        <div class="project-preview">
+            <header class="section-header">Preview</header>
+            <iframe src="https://sohelchaus.github.io/portfolio/index.html" target="_blank" loading="lazy"
+                allowfullscreen frameborder="0"></iframe>
+        </div>
+
+        <!---------------->
+        <!-- RIGHT SIDE -->
+        <!---------------->
+        <div class="project-overview">
+            <header class="section-header">Overview</header>
+            <p>&nbsp;&nbsp;&nbsp;This project is a responsive and functinal calculator. The main goal was to solidify my
+                understanding of javascript's event listeners and
+                manipulating the DOM to create an interactive user experience.
+            <header class="section-header">Key Features</header>
+
+            <ul class="features-list">
+                <li><i class="fa-solid fa-cube"></i> Perform addition, subtraction, multiplication and division.</li>
+                <li><i class="fa-solid fa-cube"></i> Fully responsive design for desktop and mobile use.</li>
+                <li><i class="fa-solid fa-cube"></i> Includes "All Clear (AC)" and "Delete (DL)" functionality.</li>
+                <li><i class="fa-solid fa-cube"></i> Clean, intuitive user interface with a modern dark theme.</li>
+            </ul>
+            </p>
+        </div>
+        </div>
+
+        <!----------------->
+        <!-- BOTTOM SIDE -->
+        <!----------------->
+        <header class="section-header">Technology Used</header>
+        <div class="project-tech">
+            <svg width="0" height="0" style="position:absolute">
+                <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#ffcc29" />
+                        <stop offset="100%" stop-color="#ff5733" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <!-- SKILL ONE -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">15%</div>
+                        </div>
+                    </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+                <div class="label">HTML</div>
+            </div>
+
+            <!-- SKILL TWO -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">70%</div>
+                        </div>
+                    </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+                <div class="label">CSS</div>
+            </div>
+
+            <!-- SKILL THREE -->
+            <div class="skill">
+                <div class="Progress-bar">
+                    <div class="outer">
+                        <div class="inner">
+                            <div class="number">50%</div>
+                        </div>
+                    </div>
+                    <svg width="80" height="80">
+                        <circle cx="40" cy="40" r="35"></circle>
+                    </svg>
+                </div>
+                <div class="label">JS</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer-section"></footer>
+
+    <script defer src="js/project.js"></script>
+    <script>
+        $(function () {
+            $("#header-section").load("header.html");
+            $("#footer-section").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>
